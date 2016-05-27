@@ -19,7 +19,19 @@ else:
     ckey = SF_PCKEY
 
 test = sfs(key, ckey, SF_DEBUG, SF_USE_SANDBOX)
-r = test.register_hook(SF_HOOK_HANDLER)
-pprint(r)
-r = test.get_departments()
+
+## Register a new webhook handler
+#r = test.register_hook(SF_HOOK_HANDLER)
+#pprint(r)
+
+## Get the clinic departments 
+#r = test.get_departments()
+#pprint(r)
+
+## Get active hospitalizations
+#r = test.get_active_hosp()
+#pprint(r)
+
+## Get a specific hospitalization
+r = test.get_hosp('9dc24c2c-b7a5-4691-8ba1-9515e8abbee3')
 pprint(r)
