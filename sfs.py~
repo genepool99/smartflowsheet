@@ -67,7 +67,7 @@ class sfs:
         return data
         
     def get_hosp(self, hid):
-        ''' Return a hospiltaization object or None '''
+        ''' Return a hospiltaization object or None'''
         headers = {'User-Agent':'MyClient/1.0.0', 'Content-type':'application/json',  'emrApiKey':self.key, 'clinicApiKey':self.ckey}
         #try:
         url = self.baseURL + '/hospitalization/' + str(hid)
