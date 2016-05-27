@@ -69,12 +69,11 @@ class sfs:
     def get_hosp(self, hid):
         ''' Return a hospiltaization object or None '''
         headers = {'User-Agent':'MyClient/1.0.0', 'Content-type':'application/json',  'emrApiKey':self.key, 'clinicApiKey':self.ckey}
-        #try:
-        url = self.baseURL + '/hospitalization/' + str(hid)
-        print url
-        r = self.s.get(url, headers=headers, timeout=5)
-        pprint(r)
-        data = json.loads(r.text)
-        #except:
-         #   return None
+        try:
+            url = self.baseURL + '/hospitalization/' + str(hid)
+            print url
+            r = self.s.get(url, headers=headers, timeout=5)
+            data = json.loads(r.text)
+        except:
+            return None
         return data
