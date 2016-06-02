@@ -4,7 +4,7 @@ from pprint import pprint
 from sfs import sfs
 
 try:
-   from settings import *                       # grab passwords outside of source control
+   from settings import *                       # grab passwords/keys outside of source control
 except ImportError:
    print "Setup login_setting.py before running."
    pass
@@ -25,13 +25,13 @@ r = test.register_hook(SF_HOOK_HANDLER)
 pprint(r)
 
 ## Get the clinic departments 
-#r = test.get_departments()
-#pprint(r)
+r = test.get_departments()
+pprint(r)
 
 ## Get active hospitalizations
-#r = test.get_active_hosp()
-#pprint(r)
+r = test.get_active_hosp()
+pprint(r)
 
 ## Get a specific hospitalization
-#r = test.get_hosp('067abd18-0d50-4620-8cf7-9fad3183f1cc')
-#pprint(r)
+r = test.get_hosp('INSERT HOSP ID')
+pprint(r)
