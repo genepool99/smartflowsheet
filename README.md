@@ -3,7 +3,7 @@
 More information visit: http://veterinarium.github.io/
 
 ## License
-Copyright (C) 2018 - DoveLewis
+Copyright (C) 2018 - DoveLewis  
 Author: Avi Solomon (asolomon@dovelewis.org)
 
 This program is free software: you can redistribute it and/or modify
