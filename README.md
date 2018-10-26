@@ -2,7 +2,7 @@
 ## A Python 2 implementation of the Smart Flow Sheet API
 More information visit: http://veterinarium.github.io/
 
-# License
+## License
 Copyright (C) 2018 - DoveLewis
 Author: Avi Solomon (asolomon@dovelewis.org)
 
